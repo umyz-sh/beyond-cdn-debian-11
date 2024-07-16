@@ -104,6 +104,7 @@ print_progress
 latest_version=2.3.3
 wget https://files.voduy.com/vDDoS-Proxy-Protection/vddos-$latest_version.tar.gz > /dev/null 2>&1
 tar xvf vddos-$latest_version.tar.gz > /dev/null 2>&1
+chmod vddos-$latest_version
 chmod 700 *.sh > /dev/null 2>&1
 ./install.sh <<EOF > /dev/null 2>&1
 1

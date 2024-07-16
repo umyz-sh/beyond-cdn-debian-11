@@ -119,10 +119,10 @@ default         https://0.0.0.0:443  https://0.0.0.0:8443   no    200      /vddo
 EOF
 
 # vDDoS'u başlatma
-/vddos/vddos start > /dev/null 2>&1
+/bin/vddos start > /dev/null 2>&1
 
 # Crontab'a vDDoS başlatma görevi ekleme
-(crontab -l 2>/dev/null; echo "@reboot /vddos/vddos start") | crontab -
+(crontab -l 2>/dev/null; echo "@reboot /bin/vddos start") | crontab -
 
 print_progress
 echo ""

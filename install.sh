@@ -177,6 +177,7 @@ latest_version=2.3.3
 echo "vDDoS Proxy Protection $latest_version sürümü indiriliyor..."
 wget https://files.voduy.com/vDDoS-Proxy-Protection/vddos-$latest_version.tar.gz
 tar xvf vddos-$latest_version.tar.gz
+cd vddos-$latest_version
 chmod 700 *.sh
 echo "vDDoS Proxy Protection kurulumu başlatılıyor..."
 ./install.sh <<EOF
